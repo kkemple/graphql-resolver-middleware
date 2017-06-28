@@ -1,0 +1,32 @@
+{
+  "name": "graphql-resolver-middleware",
+  "version": "0.0.1",
+  "description": "GraphQL resolvers middleware composer",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rimraf build && babel --source-maps --ignore '**/__tests__/**' index.js --out-dir build",
+    "build:watch": "babel -w --source-maps --ignore '**/__tests__/**' index.js --out-dir build",
+    "test": "npm run flow && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkemple/graphql-resolver-middleware"
+  },
+  "keywords": ["graphql", "middleware", "compose", "resolver"],
+  "author": "kurtiskemple@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kkemple/graphql-resolver-middleware/issues"
+  },
+  "homepage": "https://github.com/kkemple/graphql-resolver-middleware#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-stage-2": "^6.24.1",
+    "flow-bin": "^0.48.0",
+    "jest": "^20.0.4",
+    "rimraf": "^2.6.1"
+  }
+}
