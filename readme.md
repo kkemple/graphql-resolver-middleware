@@ -12,8 +12,6 @@ Adding all the functionality needed for individual resolvers can end up in a lot
 
 Some common problems you can solve with resolver middleware are authentication, authorization, logging, timing, analytics gathering, extending context, etc.
 
-> **Check out the launchpad examples below!**
-
 ## How does it do it?
 `graphql-resolver-middleware` exports a single function that takes *N* number of middleware and applies them serially to the resolver parameters, allowing you to either error out if certain conditions are not met or extend functionality by extending/mutating the context property.
 
