@@ -5,13 +5,10 @@
       "env",
       {
         "targets": {
-          "node": 7
+          "node": 4
         }
       }
     ]
   ],
-  "plugins": [
-    "transform-runtime",
-    "transform-flow-strip-types"
-  ]
+  "plugins": ["transform-runtime", "transform-flow-strip-types"]
 }
