@@ -4,6 +4,7 @@
   "description": "GraphQL resolvers middleware composer",
   "main": "build/index.js",
   "scripts": {
+    "flow": "flow",
     "build": "rimraf build && babel --source-maps --ignore '**/__tests__/**' index.js --out-dir build",
     "build:watch": "babel -w --source-maps --ignore '**/__tests__/**' index.js --out-dir build",
     "test": "npm run flow && jest --coverage"
